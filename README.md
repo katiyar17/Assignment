@@ -1,8 +1,3 @@
-# React + Vite
+ Hosted Link: https://my-loan.netlify.app/
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Direction to use: First, fill in all the details, and then the 'Next' button will automatically appear. Enter the details on the next page, and verify your OTP from the alert above. Once verified, the 'Next' button will be displayed, allowing you to proceed further. 
