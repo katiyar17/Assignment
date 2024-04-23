@@ -1,0 +1,69 @@
+.address-container {
+   
+   
+    background-image: url('G:\REACT\delta-1\Project-3\src\Image\img-3.jpg');
+    background-size: cover; /* Cover the entire container */
+    background-position: center; /* Center the background image */
+    height: 100vh; /* Set the height to 100% of the viewport height */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove padding */
+    font-family: cursive;
+    font-weight: 600;
+    font-size: large;
+    padding: 50px; 
+    margin-top: 0%;
+   
+    text-align: center;
+  }
+
+  .heading {
+    
+  }
+  
+  .input-container {
+    color: rgb(6, 255, 89);
+    margin-bottom: 20px;
+  }
+   
+  .input-container :hover {
+    color: rgb(247, 21, 21); /* Change the color to brown on hover */
+    text-decoration: underline; /* Add underline on hover */
+  }
+  .custom-input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 300px;
+    max-width: 100%;
+    box-sizing: border-box;  
+  }
+
+  label {
+    display: block;  
+    margin-bottom: 5px;
+  }
+  .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #8601f3; /* Default button color */
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn:hover {
+    background-color: #0056b3; /* Darker color on hover */
+  }
+
+  @media screen and (max-width: 768px) {
+    .address-container {
+        padding: 20px;
+    }
+
+    .custom-input {
+        width: 100%;
+    }
+}

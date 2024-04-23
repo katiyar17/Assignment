@@ -1,0 +1,57 @@
+.navbar {
+  background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYqAHSrGQNPwPYNEIccTVdJ7VxGviCopvYsyVZPHD7TE3mMHNhVfovstHwWA');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 1px solid #ddd;
+}
+
+.navbar-brand {
+  margin-left: 39%;
+  text-decoration: underline;
+  text-underline-position: under;
+  font-size: 24px;
+  font-family: cursive;
+  color: #0af8b1;
+  font-weight: bold;
+}
+
+.navbar-collapse {
+  text-align: center;
+}
+
+.navbar-nav {
+  margin-top: 10px;
+}
+
+.navbar-nav .nav-link {
+  font-size: 18px;
+  margin: 0 10px;
+  transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #f8b400;
+}
+
+/* Media query for smaller screens */
+@media screen and (max-width: 768px) {
+  .navbar-brand {
+    margin-left: 0; /* Center the navbar brand on smaller screens */
+  }
+
+  .navbar-collapse {
+    display: flex;
+    justify-content: center;
+  }
+
+  .navbar-nav {
+    margin-top: 0; /* Remove top margin for smaller screens */
+  }
+
+  .navbar-nav .nav-link {
+    margin: 0 15px; /* Increase margin between links for smaller screens */
+  }
+}

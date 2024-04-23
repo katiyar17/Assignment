@@ -1,0 +1,94 @@
+/* OTPComponent.css */
+.my-heading {
+  font-family: cursive;
+  border-bottom: 4px solid rgb(204, 7, 194);  
+}
+ 
+.otp-container {
+  background-image: url('G:\REACT\delta-1\Project-3\src\Image\img-4.avif');  
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: rgb(8, 5, 5);
+  padding: 20px;
+}
+
+#ref {
+  margin-left: 2%;
+}
+#ref1 {
+  margin-top: 6%;
+}
+.otp-form {
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 20px;
+  border-radius: 10px;
+  width: 300px;
+  text-align: center;
+}
+
+.otp-input {
+  padding: 10px;
+  margin: 10px 0;
+  width: calc(100% - 20px);
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+}
+
+.otp-button {
+  padding: 10px 20px;
+  margin-top: 10px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+ 
+#bk {
+   
+  display: flex;
+  margin-right: 18%;
+  
+}
+
+.otp-button:hover {
+  background-color: #45a049;
+}
+
+.link-button {
+  padding: 10px 20px;
+  margin: 10px;
+ 
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.link-button:hover {
+  background-color: #0056b3;
+}
+
+@media screen and (max-width: 768px) {
+  .otp-container {
+    padding: 10px;  
+  }
+
+  .otp-form {
+    width: 90%;  
+  }
+
+  .otp-button {
+    margin-top: 20px;  
+  }
+}
