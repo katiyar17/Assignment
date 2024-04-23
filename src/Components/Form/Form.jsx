@@ -14,7 +14,7 @@ export default function LoanForm() {
     console.log("Form submitted:", { fullName, mobile, pan, email, selectedLoan });
   };
 
-  // Function to check if all fields are filled
+  
   const allFieldsFilled = () => {
     return fullName !== '' && mobile !== '' && pan !== '' && selectedLoan !== '';
   };
