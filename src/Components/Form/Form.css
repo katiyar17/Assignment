@@ -1,4 +1,4 @@
-/* Default styles */
+ 
 body {
   margin: 0;
   padding: 0;
@@ -65,14 +65,13 @@ h2 {
   font-size: 12px;
   color: #0e7cdd;
 }
-
-/* Media query for smaller screens */
+  
 @media screen and (max-width: 768px) {
   .form-group {
-    font-size: small; /* Adjust font size for smaller screens */
+    font-size: small;  
   }
 
   .form-control {
-    font-size: 14px; /* Adjust input font size for smaller screens */
+    font-size: 14px;  
   }
 }
