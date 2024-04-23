@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './Address.css'; // Import CSS file for styling
+import './Address.css'; 
 import { Link } from 'react-router-dom';
 
 function Address() {
@@ -7,25 +7,25 @@ function Address() {
   const [district, setDistrict] = useState('');
   const [city, setCity] = useState('');
 
-  // Function to handle OTP input change
+ 
   const handleOtpChange = (e) => {
     const enteredOtp = e.target.value.trim();
     setOtp(enteredOtp);
   };
 
-  // Function to handle District input change
+   
   const handleDistrictChange = (e) => {
     const enteredDistrict = e.target.value.trim();
     setDistrict(enteredDistrict);
   };
 
-  // Function to handle City input change
+  
   const handleCityChange = (e) => {
     const enteredCity = e.target.value.trim();
     setCity(enteredCity);
   };
 
-  // Function to check if all fields are filled
+ 
   const areAllFieldsFilled = () => {
     return otp.length === 6 && district !== '' && city !== '';
   };
@@ -63,8 +63,8 @@ function Address() {
           onChange={handleCityChange}
         />
       </div>
-      {areAllFieldsFilled() && ( // Render Submit button only if all fields are filled
-      <div style={{ padding: '10px' }}> {/* Add margin top to create a gap */}
+      {areAllFieldsFilled() && (  
+      <div style={{ padding: '10px' }}>  
       <Link to="/address" className="btn btn-primary">
        Submit Form
       </Link>
