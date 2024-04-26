@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './Address.css'; 
+import './Address.css';  
 import { Link } from 'react-router-dom';
 
 function Address() {
@@ -7,7 +7,7 @@ function Address() {
   const [district, setDistrict] = useState('');
   const [city, setCity] = useState('');
 
- 
+   
   const handleOtpChange = (e) => {
     const enteredOtp = e.target.value.trim();
     setOtp(enteredOtp);
@@ -19,20 +19,24 @@ function Address() {
     setDistrict(enteredDistrict);
   };
 
-  
+   
   const handleCityChange = (e) => {
     const enteredCity = e.target.value.trim();
     setCity(enteredCity);
   };
 
- 
+  const handleSubmit = () => {
+     
+    alert("Congratulations! Your loan has been approved.");
+  };
+
   const areAllFieldsFilled = () => {
     return otp.length === 6 && district !== '' && city !== '';
   };
 
   return (
     <div className="address-container">
-      <h2 className='heading' >Hello! Enter Your Address</h2>
+      <h2 className='heading'>Hello! Enter Your Address</h2>
       <div className="input-container">
         <label htmlFor="otp">Enter Your Pincode</label>
         <input
@@ -64,11 +68,11 @@ function Address() {
         />
       </div>
       {areAllFieldsFilled() && (  
-      <div style={{ padding: '10px' }}>  
-      <Link to="/address" className="btn btn-primary">
-       Submit Form
-      </Link>
-    </div>
+        <div style={{ padding: '10px' }}>  
+          <button onClick={handleSubmit} className="btn btn-primary">
+            Submit Form
+          </button>
+        </div>
       )}
       <Link to="/otp" className="btn btn-primary">
         Back
